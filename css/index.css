@@ -1,0 +1,50 @@
+/* Concernant les breakpoints, nous avons convenu avec le designer UI
+d’utiliser 992 px et 768 px.
+992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
+tout ce qui est en dessous de 768 pour les téléphones portables */
+
+:root {
+    --blue-color: #0065FC;
+    --light-blue-color: #DEEBFF;
+    --gray-color: #F2F2F2;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size:  18px;
+    margin: 0 40px;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header img {
+    width: 60%;
+}
+
+header li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 36px;
+    /* margin-right: 20px; */
+    display: inline;
+}
+header ul{
+    display: inline;
+}
+header nav li.active, header nav li:hover {
+    border-top: var(--blue-color) solid 3px;
+    color: var(--blue-color);
+}
+
+header a:hover ,header  li.active>a{
+    color: var(--blue-color);
+}
+
+header nav {
+}
