@@ -12,39 +12,82 @@ tout ce qui est en dessous de 768 pour les téléphones portables */
 body {
     font-family: 'Raleway', sans-serif;
     color: black;
-    font-size:  18px;
-    margin: 0 40px;
+    margin: 0 50px;
 }
 
 header {
-    height: 100px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    height: 136px;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 header img {
-    width: 60%;
+    width: 50%;
 }
 
 header li {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 36px;
-    /* margin-right: 20px; */
-    display: inline;
+    padding: 47px 30px;
+    border-top: transparent solid 3px;
 }
-header ul{
-    display: inline;
+
+header ul {
+    display: flex;
 }
-header nav li.active, header nav li:hover {
+
+header li.active, header li:hover {
     border-top: var(--blue-color) solid 3px;
     color: var(--blue-color);
 }
 
-header a:hover ,header  li.active>a{
+header a:hover, header li.active>a {
     color: var(--blue-color);
 }
 
-header nav {
+header {
+    height: 100%;
+}
+
+/* setting responsiveness on phone screene */
+
+@media(max-width: 768px) {
+    body {
+        margin: 0;
+    }
+    header {
+        display: block;
+        height: inherit;
+        margin: 0;
+    }
+    header img {
+        width: 35%;
+        margin: 24px 0;
+    }
+    header nav {
+        height: 25px;
+    }
+    header li {
+        border-top: none;
+        padding: 0;
+        border-bottom: var(--gray-color) solid 3px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    header li.active, header li:hover {
+        border-top: none;
+        border-bottom: var(--blue-color) solid 3px;
+    }
+    header ul {
+        height: 100%;
+    }
+    header>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
