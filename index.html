@@ -12,8 +12,7 @@
     <!-- reseting some css properties -->
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <!-- importing fontawesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
-        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- importing Googlefont -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +30,7 @@
         </a>
         <nav>
             <ul>
-                <li  class="active">
+                <li class="active">
                     <a href="#">Hébergements</a>
                 </li>
                 <li>
@@ -40,13 +39,23 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p>En plein centre ille ou en pleine nature</p>
-        <form action="">
-
-        </form>
-    </section>
+    <div id="content">
+        <section>
+            <!-- partie du formulaire -->
+            <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ille ou en pleine nature</p>
+            <form id="search-form" action="">
+                <div class="form-group">
+                    <i class="fa fa-solid fa-map-marker "></i>
+                    <input type="text" value="Marseille, France">
+                    <button type="submit" id="search">Rechercher</button>
+                    <button type="submit" id="search-icon">
+                        <i class="icon fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
 </body>
 
 </html>

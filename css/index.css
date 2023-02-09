@@ -12,20 +12,25 @@ tout ce qui est en dessous de 768 pour les téléphones portables */
 body {
     font-family: 'Raleway', sans-serif;
     color: black;
-    margin: 0 50px;
+    margin: 0 40px;
+    font-size: 13px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 136px;
+    height: 90px;
     margin-left: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 header img {
-    width: 50%;
+    width: 40%;
+}
+
+header nav {
+    height: 100%;
 }
 
 header li {
@@ -46,27 +51,84 @@ header a:hover, header li.active>a {
     color: var(--blue-color);
 }
 
-header {
-    height: 100%;
+.bold {
+    font-weight: bold;
 }
+
+h1 {
+    font-size: 135%;
+    line-height: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 8px;
+}
+p {
+    margin-bottom: 14px;
+}
+
+.form-group {
+    display: flex;
+    height: 40px;
+    font-size: 16px;
+    margin: 22px 0;
+}
+#search-form .fa-map-marker {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--gray-color);
+    height: 100%;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-form button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--blue-color);
+    color: #fff;
+    padding: 0 10px;
+}
+
+#search-form #search-icon {
+    display: none;
+}
+#search-form #search {
+    display: block;
+}
+
+#search-form input[type=text] {
+    padding-left: 10px;
+}
+
+fa, input, button {
+    height: 100%;
+    border: 1px solid var(--gray-color);
+    font-weight: bold;
+}
+
 
 /* setting responsiveness on phone screene */
 
 @media(max-width: 768px) {
     body {
         margin: 0;
+        font-size: 115%;
     }
     header {
         display: block;
         height: inherit;
-        margin: 0;
+        margin-left: 0;
+        margin-bottom: 40px;
     }
     header img {
-        width: 35%;
-        margin: 24px 0;
+        width: 25%;
+        margin: 15px 0;
     }
     header nav {
-        height: 25px;
+        height: 47px;
     }
     header li {
         border-top: none;
@@ -89,5 +151,34 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    #content {
+        margin: 18px;
+    }
+    .form-group{
+        height: 58px;
+    }
+    #search-form #search {
+        display: none;
+    }
+    #search-form #search-icon {
+        display: block;
+        width: 17%;
+        border-radius: 20px;
+    }
+    #search-form .fa-map-marker{
+        width: 17%;
+    }
+    #search-form input[type="text"]{
+        width: 66%;
+        font-size: 125%;
+    }
+    h1{
+        font-size: 141%;
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 40px;
     }
 }
