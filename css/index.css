@@ -63,9 +63,12 @@ h1 {
 h1, h2 {
     margin-bottom: 8px;
 }
+
 p {
     margin-bottom: 14px;
 }
+
+/* search form */
 
 .form-group {
     display: flex;
@@ -73,6 +76,7 @@ p {
     font-size: 16px;
     margin: 22px 0;
 }
+
 #search-form .fa-map-marker {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -95,6 +99,7 @@ p {
 #search-form #search-icon {
     display: none;
 }
+
 #search-form #search {
     display: block;
 }
@@ -109,6 +114,44 @@ fa, input, button {
     font-weight: bold;
 }
 
+/* search filter* */
+
+#search-filter {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    font-size: 110%;
+    height: 42px;
+    flex-wrap: wrap;
+}
+
+#search-filter .filter {
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 27px;
+    border: solid 3px var(--gray-color);
+    height: 100%;
+    
+}
+
+#search-filter .filter span {
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-right: 17px;
+}
+
+#search-filter i {
+    padding: 8px;
+    margin-left: -3px;
+    border-radius: 50%;
+    background-color: var(--light-blue-color);
+    color: var(--blue-color);
+    height: 100%;
+    width:35px; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* setting responsiveness on phone screene */
 
@@ -155,7 +198,7 @@ fa, input, button {
     #content {
         margin: 18px;
     }
-    .form-group{
+    .form-group {
         height: 58px;
     }
     #search-form #search {
@@ -166,19 +209,19 @@ fa, input, button {
         width: 17%;
         border-radius: 20px;
     }
-    #search-form .fa-map-marker{
+    #search-form .fa-map-marker {
         width: 17%;
     }
-    #search-form input[type="text"]{
+    #search-form input[type="text"] {
         width: 66%;
         font-size: 125%;
     }
-    h1{
+    h1 {
         font-size: 141%;
         line-height: 26px;
         margin-bottom: 24px;
     }
-    p{
+    p {
         margin-bottom: 40px;
     }
 }

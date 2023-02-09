@@ -12,7 +12,8 @@
     <!-- reseting some css properties -->
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <!-- importing fontawesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- importing Googlefont -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,19 +42,41 @@
     </header>
     <div id="content">
         <section>
-            <!-- partie du formulaire -->
-            <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ille ou en pleine nature</p>
-            <form id="search-form" action="">
-                <div class="form-group">
-                    <i class="fa fa-solid fa-map-marker "></i>
-                    <input type="text" value="Marseille, France">
-                    <button type="submit" id="search">Rechercher</button>
-                    <button type="submit" id="search-icon">
-                        <i class="icon fa fa-search"></i>
-                    </button>
+            <formulaire de recherche-->
+                <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ille ou en pleine nature</p>
+                <form id="search-form" action="">
+                    <div class="form-group">
+                        <i class="fa fa-solid fa-map-marker "></i>
+                        <input type="text" Placeholder="Marseille, France">
+                        <button type="submit" id="search">Rechercher</button>
+                        <button type="submit" id="search-icon">
+                            <i class="icon fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+        </section>
+        <!-- filtres de recherche -->
+        <section id="search-filter">
+            <span class="bold">Filtres</span>
+            <!-- <div> -->
+                <div class="filter">
+                    <i class="fa fa-money-bill-wave"></i>
+                    <Span class="bold">économique</Span>
                 </div>
-            </form>
+                <div class="filter">
+                    <i class="fa fa-child-reaching"></i>
+                    <Span class="bold">Familial</Span>
+                </div>
+                <div class="filter">
+                    <i class="fa fa-heart"></i>
+                    <Span class="bold">Romantique</Span>
+                </div>
+                <div class="filter">
+                    <i class="fa fa-dog"></i>
+                    <Span class="bold">Animaux autorisés</Span>
+                <!-- </div> -->
+            </div>
         </section>
     </div>
 </body>
@@ -67,4 +90,6 @@
     <source srcset="mdn-logo.svg" type="image/svg+xml">
     <img src="mdn-logo.png" alt="MDN">
    </picture>
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-duotone fa-star"></i>
     -->
