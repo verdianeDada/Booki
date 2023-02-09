@@ -64,7 +64,7 @@ h1, h2 {
     margin-bottom: 8px;
 }
 
-p {
+#search-form p {
     margin-bottom: 14px;
 }
 
@@ -126,7 +126,6 @@ fa, input, button {
     display: flex;
     align-items: center;
     font-size: 110%;
-    height: 50px;
     flex-wrap: wrap;
 }
 
@@ -160,6 +159,40 @@ fa, input, button {
 #filter-section div#filter-section-title {
     margin-right: 15px;
 }
+#info-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+#info-section .fa-info {
+    color: var(--blue-color);
+    padding: 0px;
+    border-radius: 50%;
+    border: solid 3px var(--gray-color);
+    margin-right: 7px;
+    font-size: 12px;
+    margin-top: -5px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-section {
+    margin-top: 35px;
+}
+
+/* main content */
+
+main {
+    background-color: var(--gray-color);
+    min-height: 50px;
+    width: 70%;
+}
+
+main h2 {}
+
+aside {}
 
 /* setting responsiveness on phone screene */
 
@@ -229,7 +262,7 @@ fa, input, button {
         line-height: 26px;
         margin-bottom: 24px;
     }
-    p {
+    #search-form p {
         margin-bottom: 40px;
     }
     /* filter section */
@@ -242,6 +275,10 @@ fa, input, button {
     }
     #search-filter .filter{
         margin-bottom: 15px;
+    }
+    #search-filter .filter span {
+        padding-left: 4px;
+        padding-right: 13px;
     }
 }
 
