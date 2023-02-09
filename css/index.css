@@ -116,22 +116,26 @@ fa, input, button {
 
 /* search filter* */
 
+#filter-section {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
 #search-filter {
     display: flex;
     align-items: center;
-    margin-top: 24px;
     font-size: 110%;
-    height: 42px;
+    height: 50px;
     flex-wrap: wrap;
 }
 
 #search-filter .filter {
-    margin-left: 15px;
-    margin-top: 10px;
+    margin-right: 15px;
+    margin-top: 0;
     border-radius: 27px;
     border: solid 3px var(--gray-color);
     height: 100%;
-    
 }
 
 #search-filter .filter span {
@@ -147,15 +151,19 @@ fa, input, button {
     background-color: var(--light-blue-color);
     color: var(--blue-color);
     height: 100%;
-    width:35px; 
+    width: 35px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
+#filter-section div#filter-section-title {
+    margin-right: 15px;
+}
+
 /* setting responsiveness on phone screene */
 
-@media(max-width: 768px) {
+@media screen and (max-width: 767px) {
     body {
         margin: 0;
         font-size: 115%;
@@ -223,5 +231,30 @@ fa, input, button {
     }
     p {
         margin-bottom: 40px;
+    }
+    /* filter section */
+    #filter-section {
+        display: block;
+    }
+    #filter-section div#filter-section-title {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    #search-filter .filter{
+        margin-bottom: 15px;
+    }
+}
+
+/* setting responsiveness on tablets */
+@media screen and (min-width:768px) and (max-width:991px) {
+    /* filter section */
+    #filter-section {
+        display: block;
+    }
+    #filter-section div#filter-section-title {
+        margin-bottom: 15px;
+    }
+    #search-filter .filter{
+        margin-bottom: 15px;
     }
 }
