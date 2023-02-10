@@ -159,11 +159,13 @@ fa, input, button {
 #filter-section div#filter-section-title {
     margin-right: 15px;
 }
+
 #info-section {
     margin-top: 30px;
     display: flex;
     align-items: flex-start;
 }
+
 #info-section .fa-info {
     color: var(--blue-color);
     padding: 0px;
@@ -184,15 +186,39 @@ fa, input, button {
 
 /* main content */
 
+.section-title {
+    font-size: 140%;
+    font-weight: bold;
+}
+
 main {
     background-color: var(--gray-color);
     min-height: 50px;
     width: 70%;
+    padding: 25px;
+
 }
+.accommodation {
+    width: 190px;
+    width: 330px;
+    border: solid #fff 5px;
+    border-radius: 10px;
 
-main h2 {}
-
-aside {}
+}
+.picture-container{
+}
+.accommodation-picture{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+aside {
+    
+}
+aside h2{
+    width: 100px;
+    padding: 10%;
+}
 
 /* setting responsiveness on phone screene */
 
@@ -273,7 +299,7 @@ aside {}
         margin-right: 15px;
         margin-bottom: 15px;
     }
-    #search-filter .filter{
+    #search-filter .filter {
         margin-bottom: 15px;
     }
     #search-filter .filter span {
@@ -283,6 +309,7 @@ aside {}
 }
 
 /* setting responsiveness on tablets */
+
 @media screen and (min-width:768px) and (max-width:991px) {
     /* filter section */
     #filter-section {
@@ -291,7 +318,7 @@ aside {}
     #filter-section div#filter-section-title {
         margin-bottom: 15px;
     }
-    #search-filter .filter{
+    #search-filter .filter {
         margin-bottom: 15px;
     }
 }
