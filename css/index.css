@@ -3,12 +3,10 @@ d’utiliser 992 px et 768 px.
 992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
 tout ce qui est en dessous de 768 pour les téléphones portables */
 
-
 :root {
     --blue-color: #0065FC;
     --light-blue-color: #DEEBFF;
     --gray-color: #F2F2F2;
-    
 }
 
 body {
@@ -185,7 +183,8 @@ fa, input, button {
 #accommodation-section {
     margin-top: 35px;
     height: 630px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 /* main content */
@@ -198,69 +197,120 @@ fa, input, button {
 main {
     background-color: var(--gray-color);
     min-height: 50px;
-    width: 70%;
+    width: 65%;
     padding: 25px;
     border-radius: 15px;
-
 }
-.accommodation-list{
+
+.accommodation-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
+
 .accommodation {
     width: 30%;
     border: solid #fff 5px;
     border-radius: 15px;
     object-fit: contain;
-    margin-top: 45px;
+    margin-top: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.accommodation:hover{
+
+.accommodation:hover {
     color: blue;
 }
 
-.accommodation-picture{
-   border-top-left-radius: 15px;
-   border-top-right-radius: 15px;
-    object-fit: cover; 
+.accommodation-picture {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
     height: 125px;
     width: 100%;
 }
-.accommodation-details{
+
+.accommodation-details {
     padding: 10px;
     background-color: #fff;
-
 }
 
-.accommodation-details p:first-of-type{
-    /* font-size: 105%; */
-    overflow: hidden;
+.accommodation-details p:first-of-type {
+    /* overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap; */
 }
-.accommodation-details p{
+
+.accommodation-details p {
     line-height: 20px;
 }
-i.full-star{
+
+i.full-star {
     color: var(--blue-color);
 }
-i.empty-star{
-color: var(--gray-color);
+
+i.empty-star {
+    color: var(--gray-color);
 }
-main a{
+
+main a {
     display: block;
     padding-top: 35px;
 }
+
+/* aside :famous accommodation section */
+
 aside {
-    
-}
-aside h2{
-    width: 100px;
-    padding: 10%;
+    width: 32%;
+    background-color: var(--gray-color);
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
 }
 
+#aside-title {
+    display: flex;
+    justify-content: space-between
+}
+
+#aside-title i {
+    color: black;
+    font-size: 120%;
+}
+
+aside .accommodation {
+    width: 100%;
+    display: flex;
+}
+
+aside .accommodation-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+aside .accommodation-picture {
+    border-radius: 15px 0 0 15px;
+}
+
+aside .picture-container {
+    width: 45%;
+}
+
+aside .accommodation-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 
+
+*/
+
 /* setting responsiveness on tablet's screen */
+
 @media screen and (min-width:768px) and (max-width:991px) {
     /* filter section */
     #filter-section {
@@ -272,10 +322,31 @@ aside h2{
     #search-filter .filter {
         margin-bottom: 15px;
     }
-    .accommodation{
-        width: 45%;        
+    #accommodation-section {
+        height: auto;
+        display: block
+    }
+    main {
+        width: 100%;
+    }
+    .accommodation {
+        width: 32%;
+    }
+    aside {
+        width: 100%;
+    }
+    aside .accommodation-list {
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    aside .accommodation{
+        width: 45%;
     }
 }
+
+/*  */
 
 /* setting responsiveness on phone's screen */
 
@@ -363,24 +434,25 @@ aside h2{
         padding-left: 4px;
         padding-right: 13px;
     }
-    #accommodation-section{
+    #accommodation-section {
         height: auto;
+        display: block
     }
-    main{
+    main {
         width: 100%;
         margin: 0;
         background-color: transparent;
         border-radius: 0;
-        
     }
-    .accommodation{
+    .accommodation {
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         margin-top: 30px;
-    }   
-    .accommodation-details p{
+    }
+    .accommodation-details p {
         line-height: 23px;
     }
-    
+    aside {
+        width: 100%;
+    }
 }
-
