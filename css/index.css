@@ -3,10 +3,12 @@ d’utiliser 992 px et 768 px.
 992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
 tout ce qui est en dessous de 768 pour les téléphones portables */
 
+
 :root {
     --blue-color: #0065FC;
     --light-blue-color: #DEEBFF;
     --gray-color: #F2F2F2;
+    
 }
 
 body {
@@ -180,14 +182,16 @@ fa, input, button {
     align-items: center;
 }
 
-#content-section {
+#accommodation-section {
     margin-top: 35px;
+    height: 630px;
+
 }
 
 /* main content */
 
 .section-title {
-    font-size: 140%;
+    font-size: 130%;
     font-weight: bold;
 }
 
@@ -196,21 +200,57 @@ main {
     min-height: 50px;
     width: 70%;
     padding: 25px;
+    border-radius: 15px;
 
+}
+.accommodation-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
 }
 .accommodation {
-    width: 190px;
-    width: 330px;
+    width: 30%;
     border: solid #fff 5px;
-    border-radius: 10px;
+    border-radius: 15px;
+    object-fit: contain;
+    margin-top: 45px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.accommodation:hover{
+    color: blue;
+}
+
+.accommodation-picture{
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+    object-fit: cover; 
+    height: 125px;
+    width: 100%;
+}
+.accommodation-details{
+    padding: 10px;
+    background-color: #fff;
 
 }
-.picture-container{
+
+.accommodation-details p:first-of-type{
+    /* font-size: 105%; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.accommodation-picture{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.accommodation-details p{
+    line-height: 20px;
+}
+i.full-star{
+    color: var(--blue-color);
+}
+i.empty-star{
+color: var(--gray-color);
+}
+main a{
+    display: block;
+    padding-top: 35px;
 }
 aside {
     
@@ -220,7 +260,24 @@ aside h2{
     padding: 10%;
 }
 
-/* setting responsiveness on phone screene */
+/* setting responsiveness on tablet's screen */
+@media screen and (min-width:768px) and (max-width:991px) {
+    /* filter section */
+    #filter-section {
+        display: block;
+    }
+    #filter-section div#filter-section-title {
+        margin-bottom: 15px;
+    }
+    #search-filter .filter {
+        margin-bottom: 15px;
+    }
+    .accommodation{
+        width: 45%;        
+    }
+}
+
+/* setting responsiveness on phone's screen */
 
 @media screen and (max-width: 767px) {
     body {
@@ -262,7 +319,7 @@ aside h2{
         justify-content: center;
         align-items: center;
     }
-    #content {
+    #content-header {
         margin: 18px;
     }
     .form-group {
@@ -306,19 +363,24 @@ aside h2{
         padding-left: 4px;
         padding-right: 13px;
     }
+    #accommodation-section{
+        height: auto;
+    }
+    main{
+        width: 100%;
+        margin: 0;
+        background-color: transparent;
+        border-radius: 0;
+        
+    }
+    .accommodation{
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-top: 30px;
+    }   
+    .accommodation-details p{
+        line-height: 23px;
+    }
+    
 }
 
-/* setting responsiveness on tablets */
-
-@media screen and (min-width:768px) and (max-width:991px) {
-    /* filter section */
-    #filter-section {
-        display: block;
-    }
-    #filter-section div#filter-section-title {
-        margin-bottom: 15px;
-    }
-    #search-filter .filter {
-        margin-bottom: 15px;
-    }
-}

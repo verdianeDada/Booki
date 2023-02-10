@@ -41,75 +41,226 @@
         </nav>
     </header>
     <div id="content">
-        <section>
-            <formulaire de recherche-->
-                <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ille ou en pleine nature</p>
-                <form id="search-form" action="">
-                    <div class="form-group">
-                        <i class="fa fa-solid fa-map-marker "></i>
-                        <input type="text" Placeholder="Marseille, France">
-                        <button type="submit" id="search">Rechercher</button>
-                        <button type="submit" id="search-icon">
-                            <i class="icon fa fa-search"></i>
-                        </button>
+        <div id="content-header">
+            <section>
+                <formulaire de recherche-->
+                    <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ille ou en pleine nature</p>
+                    <form id="search-form" action="">
+                        <div class="form-group">
+                            <i class="fa fa-solid fa-map-marker "></i>
+                            <input type="text" Placeholder="Marseille, France">
+                            <button type="submit" id="search">Rechercher</button>
+                            <button type="submit" id="search-icon">
+                                <i class="icon fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+            </section>
+            <!-- filtres de recherche -->
+            <section id="filter-section">
+                <div id="filter-section-title">
+                    <span class="bold">Filtres</span>
+                </div>
+                <div id="search-filter">
+                    <div class="filter">
+                        <i class="fa fa-money-bill-wave"></i>
+                        <Span class="bold">économique</Span>
                     </div>
-                </form>
-        </section>
-        <!-- filtres de recherche -->
-        <section id="filter-section">
-            <div id="filter-section-title">
-                <span class="bold">Filtres</span>
-            </div>
-            <div id="search-filter">
-                <div class="filter">
-                    <i class="fa fa-money-bill-wave"></i>
-                    <Span class="bold">économique</Span>
+                    <div class="filter">
+                        <i class="fa fa-child-reaching"></i>
+                        <Span class="bold">Familial</Span>
+                    </div>
+                    <div class="filter">
+                        <i class="fa fa-heart"></i>
+                        <Span class="bold">Romantique</Span>
+                    </div>
+                    <div class="filter">
+                        <i class="fa fa-dog"></i>
+                        <Span class="bold">Animaux autorisés</Span>
+                    </div>
                 </div>
-                <div class="filter">
-                    <i class="fa fa-child-reaching"></i>
-                    <Span class="bold">Familial</Span>
-                </div>
-                <div class="filter">
-                    <i class="fa fa-heart"></i>
-                    <Span class="bold">Romantique</Span>
-                </div>
-                <div class="filter">
-                    <i class="fa fa-dog"></i>
-                    <Span class="bold">Animaux autorisés</Span>
-                </div>
-            </div>
-        </section>
-        <section id="info-section">
+            </section>
+            <section id="info-section">
 
-            <i class="fa-solid fa-info"></i>
-            <p> Plus de 500 logements sont disponibles dans cette ville
-            </p>
-        </section>
-        <section id="content-section">
+                <i class="fa-solid fa-info"></i>
+                <p> Plus de 500 logements sont disponibles dans cette ville
+                </p>
+            </section>
+        </div>
+        <section id="accommodation-section">
             <main>
-                <h2 class="section-title">Hébergements à Marseille</h2>
-                <div>
+                <h2 class="section-title" style="margin-bottom: -11px;">Hébergements à Marseille</h2>
+                <div class="accommodation-list">
                     <div class="accommodation">
                         <div class="picture-container">
-                            <!-- <picture  > -->
-                            <!-- defining image for phone screen-->
-                            <!-- <source media="(max-width: 767px)" srcset="./assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"> -->
-                            <!-- defining image for phone wide screen-->
-                            <!-- <source media="(min-width: 992px)" srcset="./assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"> -->
-                            <!-- defining default image for tablet screen-->
-                            <img class="accommodation-picture" src="./assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Aubere La Cannebière">
-                            <!-- </picture> -->
+                            <picture>
+                                <!-- defining image for phone screen-->
+                                <source media="(max-width: 767px)" srcset="./assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                                <!-- defining image for phone wide screen-->
+                                <source media="(min-width: 992px)" srcset="./assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                                <!-- defining default image for tablet screen-->
+                                <img class="accommodation-picture" src="./assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Aubere La Cannebière">
+                            </picture>
                         </div>
                         <div class="accommodation-details">
-                            df
+                            <p class="bold">Auberge La Cannebière</p>
+                            <p>Nuit à partir de 25£</p>
+                            <p>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class=" empty-star fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accommodation">
+                        <div class="picture-container">
+                            <picture>
+                                <!-- defining image for phone screen-->
+                                <source media="(max-width: 767px)" srcset="./assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                                <!-- defining image for phone wide screen-->
+                                <source media="(min-width: 992px)" srcset="./assets/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                                <!-- defining default image for tablet screen-->
+                                <img class="accommodation-picture" src="./assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                            </picture>
+                        </div>
+                        <div class="accommodation-details">
+                            <p class="bold">Hôtel du port</p>
+                            <p>Nuit à partir de 52£ </p>
+                            <p>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accommodation">
+                        <div class="picture-container">
+                            <picture>
+                                <!-- defining image for phone screen-->
+                                <source media="(max-width: 767px)" src="./assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                                <!-- defining image for phone wide screen-->
+                                <source media="(min-width: 992px)" src="./assets/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                                <!-- defining default image for tablet screen-->
+                                <img class="accommodation-picture" src="./assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel les mouettes">
+                            </picture>
+                        </div>
+                        <div class="accommodation-details">
+                            <p class="bold">Hôtel les mouettes</p>
+                            <p>Nuit à partir de 76£</p>
+                            <p>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class=" empty-star fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accommodation">
+                        <div class="picture-container">
+                            <picture>
+                                <!-- defining image for phone screen-->
+                                <source media="(max-width: 767px)" src="./assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                                <!-- defining image for phone wide screen-->
+                                <source media="(min-width: 992px)" src="./assets/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                                <!-- defining default image for tablet screen-->
+                                <img class="accommodation-picture" src="./assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                            </picture>
+                        </div>
+                        <div class="accommodation-details">
+                            <p class="bold">Hôtel de la mer</p>
+                            <p>Nuit à partir de 46£ </p>
+                            <p>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class=" empty-star fa-solid fa-star"></i>
+                                <i class=" empty-star fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accommodation">
+                        <div class="picture-container">
+                            <picture>
+                                <!-- defining image for phone screen-->
+                                <source media="(max-width: 767px)" src="./assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                                <!-- defining image for phone wide screen-->
+                                <source media="(min-width: 992px)" src="./assets/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                                <!-- defining default image for tablet screen-->
+                                <img class="accommodation-picture" src="./assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
+                            </picture>
+                        </div>
+                        <div class="accommodation-details">
+                            <p class="bold">Auberge le panier</p>
+                            <p>Nuit à partir de 23£ </p>
+                            <p>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class=" empty-star fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accommodation">
+                        <div class="picture-container">
+                            <picture>
+                                <!-- defining image for phone screen-->
+                                <source media="(max-width: 767px)" src="./assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                                <!-- defining image for phone wide screen-->
+                                <source media="(min-width: 992px)" src="./assets/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                                <!-- defining default image for tablet screen-->
+                                <img class="accommodation-picture" src="./assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel chez Amina">
+                            </picture>
+                        </div>
+                        <div class="accommodation-details">
+                            <p class="bold">Hôtel chez Amina</p>
+                            <p>Nuit à partir de 96£ </p>
+                            <p>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                            </p>
                         </div>
                     </div>
                 </div>
+                <a class="bold" href="#">Afficher plus</a>
             </main>
-            <!-- <aside>
-                <h2 class="section-title">Les plus populaires</h2>
-            </aside> -->
+            <aside>
+                <h2 class="section-title" style="margin-bottom: -11px;">Hébergements à Marseille</h2>
+                <div class="faaccommodation-list">
+                    <div class="accommodation">
+                        <div class="picture-container">
+                            <picture>
+                                <!-- defining image for phone screen-->
+                                <source media="(max-width: 767px)" srcset="./assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                                <!-- defining image for phone wide screen-->
+                                <source media="(min-width: 992px)" srcset="./assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                                <!-- defining default image for tablet screen-->
+                                <img class="accommodation-picture" src="./assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Aubere La Cannebière">
+                            </picture>
+                        </div>
+                        <div class="accommodation-details">
+                            <p class="bold">Auberge La Cannebière</p>
+                            <p>Nuit à partir de 25£</p>
+                            <p>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class="full-star fa-solid fa-star"></i>
+                                <i class=" empty-star fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>>
+            </aside>
         </section>
     </div>
 </body>
