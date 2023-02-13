@@ -54,7 +54,9 @@ header a:hover, header li.active>a {
 .bold {
     font-weight: bold;
 }
-
+.box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 h1 {
     font-size: 135%;
     line-height: 20px;
@@ -213,7 +215,6 @@ main {
     border: solid #fff 5px;
     border-radius: 15px;
     margin-top: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .accommodation:hover {
@@ -233,11 +234,6 @@ main {
     background-color: #fff;
 }
 
-.accommodation-details p:first-of-type {
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; */
-}
 
 .accommodation-details p {
     line-height: 20px;
@@ -308,23 +304,52 @@ aside .accommodation-list {
 
 /* activities section */
 #activities{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 #activities .activities-list{
-    height: 300px;
+    height: 320px;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .activity-column{
     width: 23%
 }
-.picture-container{
+/* .picture-container{
     object-fit: cover;
+} */
+.activities-list #vieux-port{
+height: 100%;
+border-radius: 20px;
 }
+.activities-list #vieux-port .activity-picture{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    height: 100%;
+    height: calc( 100% - 45px ); 
+    width: 100%;
 
+    /* height: auto ; */
+}
+#actiities .picture-container{
+   
+}
+.activity-title{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
 /* 
 
 */
+
+
+
+
+
+
+
 
 /* setting responsiveness on tablet's screen */
 
