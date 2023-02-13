@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Booki</title>
+    <title>Static Booki</title>
     <meta charset="utf-8">
     <meta name="author" content="Verdiane DADA">
     <meta name="description" content="Booki, a holliday accommodation booking webapp, I'm Turning a  mockup into a website with HTML & CSS  ">
@@ -90,7 +90,9 @@
         </div>
         <section id="accommodation-section">
             <main>
-                <div><h2 class="section-title">Hébergements à Marseille</h2></div>                
+                <div>
+                    <h2 class="section-title">Hébergements à Marseille</h2>
+                </div>
                 <div class="accommodation-list">
                     <div class="accommodation">
                         <div class="picture-container">
@@ -106,7 +108,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Auberge La Cannebière</p>
-                                <p>Nuit à partir de 25£</p>
+                                <p>Nuit à partir de 25
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -134,7 +138,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Hôtel du port</p>
-                                <p>Nuit à partir de 52£ </p>
+                                <p>Nuit à partir de 52
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -162,7 +168,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Hôtel les mouettes</p>
-                                <p>Nuit à partir de 76£</p>
+                                <p>Nuit à partir de 76
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -190,7 +198,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Hôtel de la mer</p>
-                                <p>Nuit à partir de 46£ </p>
+                                <p>Nuit à partir de 46
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -218,7 +228,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Auberge le panier</p>
-                                <p>Nuit à partir de 23£ </p>
+                                <p>Nuit à partir de 23
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -246,7 +258,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Hôtel chez Amina</p>
-                                <p>Nuit à partir de 96£ </p>
+                                <p>Nuit à partir de 96
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -286,7 +300,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Hôtel Le soleil du matin</p>
-                                <p>Nuit à partir de 68£</p>
+                                <p>Nuit à partir de 68
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -313,7 +329,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Au coeur de l'eau Chambres d'hôtes</p>
-                                <p>Nuit à partir de 71£</p>
+                                <p>Nuit à partir de 71
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -340,7 +358,9 @@
                         <div class="accommodation-details">
                             <div>
                                 <p class="bold">Hôtel Tout bleu et Blanc</p>
-                                <p>Nuit à partir de 128£</p>
+                                <p>Nuit à partir de 128
+                                    <span class="bold">&#8364;</span>
+                                </p>
                             </div>
                             <div>
                                 <p>
@@ -355,6 +375,28 @@
                     </div>
                 </div>
             </aside>
+        </section>
+        <section id="activities">
+            <div>
+                <h2 class="section-title">Activités à Marseille</h2>
+            </div>
+            <div class="activities-list">
+                <div class="activity-column">
+                    <div class="picture-container">
+                        <picture>
+                            <!-- defining image for phone screen-->
+                            <source media="(max-width: 767px)" srcset="./assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <!-- defining image for phone wide screen-->
+                            <source media="(min-width: 992px)" srcset="./assets/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            <!-- defining default image for tablet screen-->
+                            <img class="accommodation-picture" src="./assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Aubere La Cannebière">
+                        </picture>
+                    </div>
+                    <div class="activity-title">
+                        <p class="bold">Vieux Port</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
