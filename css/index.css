@@ -347,22 +347,22 @@ aside .accommodation-list {
     justify-content: space-between;
 }
 
-#activities #second-column #first-element {
+#activities #second-column .first-element {
     height: 205px;
     border-radius: 20px;
 }
 
-#activities #second-column #second-element {
+#activities #second-column .second-element {
     height: 175px;
     border-radius: 20px;
 }
 
-#activities #fourth-column #first-element {
+#activities #fourth-column .first-element {
     height: 165px;
     border-radius: 20px;
 }
 
-#activities #fourth-column #second-element {
+#activities #fourth-column .second-element {
     height: 205px;
     border-radius: 20px;
 }
