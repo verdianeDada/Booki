@@ -12,7 +12,6 @@ tout ce qui est en dessous de 768 pour les téléphones portables */
 body {
     font-family: 'Raleway', sans-serif;
     color: black;
-    margin: 0 40px;
     font-size: 13px;
 }
 
@@ -66,6 +65,10 @@ h1 {
 
 h1, h2 {
     margin-bottom: 8px;
+}
+
+#content, header {
+    margin: 0 40px;
 }
 
 #search-form p {
@@ -308,6 +311,7 @@ aside .accommodation-list {
 #activities {
     margin-top: 50px;
 }
+
 #activities #activities-list {
     height: 410px;
     display: flex;
@@ -368,10 +372,30 @@ aside .accommodation-list {
     display: flex;
     align-items: center;
 }
-
 /* 
+footer {
+    background-color: var(--gray-color);
+    padding: 30px 40px;
+    display: flex;
+    margin-top: 50px;
+}
 
-*/
+footer .column {
+    width: 33%
+}
+
+footer .column p:first-of-type {
+    font-size: 120%;
+}
+
+footer p {
+    margin-top: 20px;
+} */
+
+
+
+
+
 
 /* setting responsiveness on tablet's screen */
 
@@ -455,6 +479,9 @@ aside .accommodation-list {
     #content-header {
         margin: 18px;
     }
+    #content, header {
+        margin: 0;
+    }
     .form-group {
         height: 58px;
     }
@@ -531,8 +558,11 @@ aside .accommodation-list {
         display: block;
         width: 100%;
     }
-    #activities #activities-list  .activity-item {
+    #activities #activities-list .activity-item {
         height: 195px;
         margin-top: 25px;
     }
+    /* footer {
+        display: block;
+    } */
 }
