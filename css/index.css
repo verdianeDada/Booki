@@ -54,9 +54,11 @@ header a:hover, header li.active>a {
 .bold {
     font-weight: bold;
 }
-.box-shadow{
+
+.box-shadow {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 h1 {
     font-size: 135%;
     line-height: 20px;
@@ -234,7 +236,6 @@ main {
     background-color: #fff;
 }
 
-
 .accommodation-details p {
     line-height: 20px;
 }
@@ -303,53 +304,74 @@ aside .accommodation-list {
 }
 
 /* activities section */
-#activities{
+
+#activities {
     margin-top: 50px;
 }
-#activities .activities-list{
-    height: 320px;
+#activities #activities-list {
+    height: 410px;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.activity-column{
+
+.activity-column {
     width: 23%
 }
+
 /* .picture-container{
     object-fit: cover;
 } */
-.activities-list #vieux-port{
-height: 100%;
-border-radius: 20px;
+
+#activities #activities-list .column-stretch {
+    height: 100%;
+    border-radius: 20px;
 }
-.activities-list #vieux-port .activity-picture{
+
+#activities #activities-list .activity-picture {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
-    height: 100%;
-    height: calc( 100% - 45px ); 
+    height: calc( 100% - 60px);
     width: 100%;
-
     /* height: auto ; */
 }
-#actiities .picture-container{
-   
+
+#activities #second-column, #activities #fourth-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.activity-title{
+
+#activities #second-column #first-element {
+    height: 205px;
+    border-radius: 20px;
+}
+
+#activities #second-column #second-element {
+    height: 175px;
+    border-radius: 20px;
+}
+
+#activities #fourth-column #first-element {
+    height: 165px;
+    border-radius: 20px;
+}
+
+#activities #fourth-column #second-element {
+    height: 205px;
+    border-radius: 20px;
+}
+
+.activity-title {
     padding: 15px;
     display: flex;
     align-items: center;
 }
+
 /* 
 
 */
-
-
-
-
-
-
-
 
 /* setting responsiveness on tablet's screen */
 
@@ -498,5 +520,19 @@ border-radius: 20px;
         width: 100%;
         order: 1;
         border-radius: 0;
+    }
+    #activities {
+        padding: 25px;
+    }
+    #activities #activities-list {
+        display: block;
+    }
+    #activities #activities-list .activity-column {
+        display: block;
+        width: 100%;
+    }
+    #activities #activities-list  .activity-item {
+        height: 195px;
+        margin-top: 25px;
     }
 }
