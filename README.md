@@ -7,8 +7,8 @@
  The challenge was to  <strong> turn a  mockup into a website from scratch </strong> using  pure <strong>CSS</strong>  and <strong>HTML</strong> given 2 pictures: The desktop's and phone's models.
  
  This has been hosted on:
- -  <strong>Amazon Web Service (AWS) availaible<a href="">Through this link </a></strong> 
- -  <strong>Github.io availaible<a href="https://verdianedada.github.io/Booki/">Through this link </a></strong> 
+ -  <strong>Amazon Web Service (AWS) availaible<a href="https://dug71970l5wa5.cloudfront.net/">. It has been distributed using <strong >AWS ClouFront to accelerate content delivery. Booki can be accessed </strong>  on this link </a></strong> 
+ -  <strong>Github  availaible<a href="https://verdianedada.github.io/booki/"> on this link </a></strong> 
     
  
  This project has been successfully built from scratch using:
