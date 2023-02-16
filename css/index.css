@@ -12,9 +12,10 @@ tout ce qui est en dessous de 768 pour les téléphones portables */
 body {
     font-family: 'Raleway', sans-serif;
     color: black;
-    font-size: 13px;
+    font-size: 14px;
 }
-a:hover{
+
+a:hover {
     color: var(--blue-color);
 }
 
@@ -22,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 105px;
     margin-left: 20px;
     margin-bottom: 5px;
 }
@@ -75,6 +76,10 @@ h1, h2 {
     margin: 0 40px;
 }
 
+header {
+    padding-left: 20px;
+}
+
 #search-form p {
     margin-bottom: 14px;
 }
@@ -118,11 +123,11 @@ h1, h2 {
 #search-form input[type=text] {
     padding-left: 10px;
 }
+
 #search-form input[type=text]:hover {
     /* border: 2px solid var(--blue-color); */
     outline: none;
 }
-
 
 fa, input, button {
     height: 100%;
@@ -263,6 +268,7 @@ fa, input, button {
 
 .accommodation-details p {
     line-height: 20px;
+    display: flex;
 }
 
 i.full-star {
@@ -277,7 +283,6 @@ i.empty-star {
     display: block;
     padding-top: 35px;
 }
-
 
 /* aside :famous accommodation section */
 
@@ -298,7 +303,8 @@ aside {
     color: black;
     font-size: 120%;
 }
-aside .accommodation{
+
+aside .accommodation {
     width: 100%;
 }
 
@@ -419,7 +425,6 @@ footer .column p:first-of-type {
 footer p, footer li {
     margin-top: 17px;
 }
-
 
 /* setting responsiveness on tablet's screen */
 
