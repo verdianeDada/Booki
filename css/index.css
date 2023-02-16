@@ -372,10 +372,10 @@ aside .accommodation-list {
     display: flex;
     align-items: center;
 }
-/* 
+
 footer {
     background-color: var(--gray-color);
-    padding: 30px 40px;
+    padding: 1px 40px 42px;
     display: flex;
     margin-top: 50px;
 }
@@ -386,16 +386,13 @@ footer .column {
 
 footer .column p:first-of-type {
     font-size: 120%;
+    padding-bottom: 14px;
+    margin-top: 53px;
 }
 
 footer p {
-    margin-top: 20px;
-} */
-
-
-
-
-
+    margin-top: 17px;
+}
 
 /* setting responsiveness on tablet's screen */
 
@@ -553,6 +550,7 @@ footer p {
     }
     #activities #activities-list {
         display: block;
+        height: auto;
     }
     #activities #activities-list .activity-column {
         display: block;
@@ -562,7 +560,19 @@ footer p {
         height: 195px;
         margin-top: 25px;
     }
-    /* footer {
+    footer {
         display: block;
-    } */
+    }
+    footer .column{
+        width: 100%;
+    }
+    footer .column p:first-of-type {
+        padding-bottom: 14px;
+        margin-top: 43px;
+    }
+    
+    footer p {
+        margin-top: 13px;
+        font-size: 90%;
+    }
 }
