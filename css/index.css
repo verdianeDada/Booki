@@ -14,6 +14,9 @@ body {
     color: black;
     font-size: 13px;
 }
+a:hover{
+    color: var(--blue-color);
+}
 
 header {
     display: flex;
@@ -46,8 +49,9 @@ header li.active, header li:hover {
     color: var(--blue-color);
 }
 
-header a:hover, header li.active>a {
+header a:hover, header li.active>a, main #read-more:hover {
     color: var(--blue-color);
+    cursor: pointer;
 }
 
 .bold {
@@ -114,6 +118,11 @@ h1, h2 {
 #search-form input[type=text] {
     padding-left: 10px;
 }
+#search-form input[type=text]:hover {
+    /* border: 2px solid var(--blue-color); */
+    outline: none;
+}
+
 
 fa, input, button {
     height: 100%;
@@ -148,6 +157,13 @@ fa, input, button {
     text-transform: capitalize;
     padding-left: 10px;
     padding-right: 17px;
+}
+
+#search-filter .filter:hover {
+    background-color: var(--blue-color);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 100;
 }
 
 #search-filter i {
@@ -222,8 +238,14 @@ main {
     margin-top: 25px;
 }
 
-.accommodation:hover {
+.accommodation:hover, .activity-item:hover, button:hover {
     color: blue;
+    -webkit-filter: opacity(0.8);
+    -moz-filter: opacity(0.8);
+    -o-filter: opacity(0.8);
+    -ms-filter: opacity(0.8);
+    filter: opacity(0.8);
+    cursor: pointer;
 }
 
 .accommodation-picture {
@@ -251,10 +273,11 @@ i.empty-star {
     color: var(--gray-color);
 }
 
-main a {
+main #read-more {
     display: block;
     padding-top: 35px;
 }
+
 
 /* aside :famous accommodation section */
 
@@ -275,8 +298,11 @@ aside {
     color: black;
     font-size: 120%;
 }
+aside .accommodation{
+    width: 100%;
+}
 
-aside .accommodation {
+aside .accommodation a {
     width: 100%;
     height: 154px;
     display: flex;
@@ -390,9 +416,10 @@ footer .column p:first-of-type {
     margin-top: 53px;
 }
 
-footer p {
+footer p, footer li {
     margin-top: 17px;
 }
+
 
 /* setting responsiveness on tablet's screen */
 
@@ -563,15 +590,14 @@ footer p {
     footer {
         display: block;
     }
-    footer .column{
+    footer .column {
         width: 100%;
     }
     footer .column p:first-of-type {
         padding-bottom: 14px;
         margin-top: 43px;
     }
-    
-    footer p {
+    footer p, footer li {
         margin-top: 13px;
         font-size: 90%;
     }
