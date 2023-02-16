@@ -2,13 +2,13 @@
 <table>
 <tr>
 <td>
- <a href="">Booki </a>  is a static and <strong>responsive</strong>  web site that has been as a personal project. 
+ <strong>Booki </strong>  is a static and <strong>responsive</strong>  web site that has been as a personal project. 
 
  The challenge was to  <strong> turn a  mockup into a website from scratch </strong> using  pure <strong>CSS</strong>  and <strong>HTML</strong> given 2 pictures: The desktop's and phone's models.
  
  This has been hosted on:
  -  <strong>Amazon Web Service (AWS) availaible<a href="">Through this link </a></strong> 
- -  <strong>Github.io availaible<a href="">Through this link </a></strong> 
+ -  <strong>Github.io availaible<a href="https://verdianedada.github.io/Booki/">Through this link </a></strong> 
     
  
  This project has been successfully built from scratch using:
