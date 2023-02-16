@@ -49,7 +49,7 @@ header li.active, header li:hover {
     color: var(--blue-color);
 }
 
-header a:hover, header li.active>a, main #read-more:hover {
+header a:hover, header li.active>a, #all-accommodations #read-more:hover {
     color: var(--blue-color);
     cursor: pointer;
 }
@@ -210,14 +210,14 @@ fa, input, button {
     justify-content: space-between;
 }
 
-/* main content */
+/* #all-accommodations content */
 
 .section-title {
     font-size: 130%;
     font-weight: bold;
 }
 
-main {
+#all-accommodations {
     background-color: var(--gray-color);
     min-height: 50px;
     width: 65%;
@@ -273,7 +273,7 @@ i.empty-star {
     color: var(--gray-color);
 }
 
-main #read-more {
+#all-accommodations #read-more {
     display: block;
     padding-top: 35px;
 }
@@ -438,7 +438,7 @@ footer p, footer li {
         height: auto;
         display: block
     }
-    main {
+    #all-accommodations {
         width: 100%;
     }
     .accommodation {
@@ -552,7 +552,7 @@ footer p, footer li {
         display: flex;
         flex-direction: column;
     }
-    main {
+    #all-accommodations {
         width: 100%;
         margin: 39px 0 0 0;
         background-color: transparent;
