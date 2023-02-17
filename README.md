@@ -28,7 +28,7 @@
   
 ## Interfaces
 
-<table >
+<table align="center">
 <tr>
 <td>
 <strong>Computer's view </strong>
@@ -36,7 +36,7 @@
 </tr>
 
 <tr>
-<td>
+<td align="center">
   <img  width="90%" alt="Verdiane DADA Booki" src="https://github.com/verdianeDada/Booki/blob/main/Screenshots/Computer.png">
 </td>
 </tr>
@@ -51,7 +51,7 @@
 </tr>
 
 <tr>
-<td>
+<td align="center">
   <img  width="90%" alt="Verdiane DADA Booki" src="https://github.com/verdianeDada/Booki/blob/main/Screenshots/Tablet.png">
 </td>
 </tr>
@@ -66,7 +66,7 @@
 </tr>
 
 <tr>
-<td>
+<td align="center">
   <img  width="90%" alt="Verdiane DADA Booki" src="https://github.com/verdianeDada/Booki/blob/main/Screenshots/Phone.png">
 </td>
 </tr>
