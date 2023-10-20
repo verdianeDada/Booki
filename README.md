@@ -8,7 +8,7 @@
 
  The challenge was to  <strong> turn a  mockup into a website from scratch </strong> using  pure <strong>CSS</strong>  and <strong>HTML</strong> given 2 pictures: The desktop's and phone's models.
  
- ## Hosting
+ ## Hosting (Temporarily not available)
  This has been hosted on <a href="https://aws.amazon.com/">Amazon Web Service (AWS)<a >. It has been distributed using <a href="https://aws.amazon.com/fr/cloudfront/">AWS CloudFront</a> to accelerate content delivery. </strong>  <a href="https://d1d0or2f9eux5m.cloudfront.net/">Booki can be accessed  on this link </a></strong>   
 
 
